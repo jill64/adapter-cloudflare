@@ -42,7 +42,7 @@
     "build:demo": "cd demo && pnpm build",
     "preview": "pnpm build:lib && cd demo && pnpm preview",
     "prepack": "pnpm build",
-    "lint": "pnpm lint:lib && pnpm lint:demo",
+    "lint": "pnpm build:lib && pnpm lint:lib && pnpm lint:demo",
     "lint:lib": "npx eslint .",
     "lint:demo": "cd demo && pnpm lint",
     "format": "pnpm format:lib && pnpm format:demo",
