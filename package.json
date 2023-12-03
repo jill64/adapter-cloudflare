@@ -1,7 +1,7 @@
 {
   "name": "@jill64/adapter-cloudflare",
   "version": "0.0.0",
-  "description": "",
+  "description": "🔌 SvelteKit Adapter for Cloudflare Pages with node_compat",
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
@@ -11,7 +11,9 @@
   "files": [
     "dist",
     "!**/*.test.*",
-    "!**/*.spec.*"
+    "!**/*.spec.*",
+    "!*.test.*",
+    "!*.spec.*"
   ],
   "exports": {
     ".": {
@@ -23,7 +25,13 @@
     "type": "git",
     "url": "https://github.com/jill64/adapter-cloudflare.git"
   },
-  "keywords": [],
+  "keywords": [
+    "adapter",
+    "cloudflare",
+    "node",
+    "pages",
+    "sveltekit"
+  ],
   "publishConfig": {
     "access": "public"
   },
