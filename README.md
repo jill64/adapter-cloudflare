@@ -13,3 +13,16 @@ npm i @jill64/adapter-cloudflare
 ```
 
 <!----- END GHOST DOCS HEADER ----->
+
+## Usage
+
+```js
+// svelte.config.js
+import adapter from '@jill64/adapter-cloudflare'
+
+export default {
+  kit: {
+    adapter: adapter()
+  }
+}
+```
