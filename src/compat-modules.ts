@@ -1,3 +1,5 @@
+// https://developers.cloudflare.com/workers/runtime-apis/nodejs/
+
 export const compat_modules = [
   'async_hooks',
   'buffer',
