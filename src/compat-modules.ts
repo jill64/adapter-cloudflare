@@ -1,6 +1,7 @@
 // https://developers.cloudflare.com/workers/runtime-apis/nodejs/
 
 export const compat_modules = [
+  'assert',
   'async_hooks',
   'buffer',
   'crypto',
