@@ -4,6 +4,7 @@ import type {
 } from '@sveltejs/adapter-cloudflare'
 import { Adapter, Builder } from '@sveltejs/kit'
 import { build } from 'esbuild'
+import { resolve } from 'import-meta-resolve'
 import { writeFileSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -12,7 +13,10 @@ export default (options: AdapterOptions = {}): Adapter => ({
   name: '@jill64/adapter-cloudflare',
   async adapt(builder) {
     const files = fileURLToPath(
-      path.join(import.meta.resolve('@sveltejs/adapter-cloudflare'), '../files')
+      path.join(
+        resolve('@sveltejs/adapter-cloudflare', import.meta.url),
+        '../files'
+      )
     )
 
     const dest = builder.getBuildDirectory('cloudflare')
