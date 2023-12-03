@@ -32,13 +32,15 @@
     "build": "pnpm build:lib && pnpm build:demo",
     "build:lib": "tsc && npx publint",
     "build:demo": "cd demo && pnpm build",
+    "preview": "cd demo && pnpm preview",
     "prepack": "pnpm build",
     "lint": "pnpm lint:lib && pnpm lint:demo",
     "lint:lib": "npx eslint .",
     "lint:demo": "cd demo && pnpm lint",
     "format": "pnpm format:lib && pnpm format:demo",
     "format:lib": "npx prettier -w .",
-    "format:demo": "cd demo && pnpm format"
+    "format:demo": "cd demo && pnpm format",
+    "test": "playwright test"
   },
   "peerDependencies": {
     "@sveltejs/kit": "^1.0.0"
