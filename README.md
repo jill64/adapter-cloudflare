@@ -22,7 +22,19 @@ import adapter from '@jill64/adapter-cloudflare'
 
 export default {
   kit: {
-    adapter: adapter()
+    adapter: adapter({
+      // /* @sveltejs/adapter-cloudflare options */
+      // routes: {
+      //   // ...
+      // },
+      // /* esbuild-plugin-polyfill-node options */
+      // globals: {
+      //   // ...
+      // },
+      // polyfills: {
+      //   // ...
+      // }
+    })
   }
 }
 ```
