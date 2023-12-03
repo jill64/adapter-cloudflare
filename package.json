@@ -40,7 +40,7 @@
     "build": "pnpm build:lib && pnpm build:demo",
     "build:lib": "tsc && npx publint",
     "build:demo": "cd demo && pnpm build",
-    "preview": "cd demo && pnpm preview",
+    "preview": "pnpm build:lib && cd demo && pnpm preview",
     "prepack": "pnpm build",
     "lint": "pnpm lint:lib && pnpm lint:demo",
     "lint:lib": "npx eslint .",
