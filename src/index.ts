@@ -12,11 +12,7 @@ import { fileURLToPath } from 'node:url'
 import { compat_all_modules, compat_modules } from './compat-modules.js'
 import { PolyfillConfig } from './types/PolyfillConfig.js'
 
-export default (
-  options: AdapterOptions & {
-    polyfills?: PolyfillConfig
-  } = {}
-): Adapter => ({
+export default (options: AdapterOptions & PolyfillConfig = {}): Adapter => ({
   name: '@jill64/adapter-cloudflare',
   async adapt(builder) {
     const files = fileURLToPath(
@@ -83,8 +79,8 @@ export default (
         __dirname: false,
         __filename: false,
         navigator: false,
-        ...exclude_modules,
-        ...(options.polyfills?.globals ?? {})
+        ...(options?.globals ?? {}),
+        ...exclude_modules
       },
       polyfills: {
         _stream_duplex: false,
@@ -125,8 +121,8 @@ export default (
         wasi: false,
         worker_threads: false,
         zlib: false,
-        ...exclude_modules,
-        ...(options.polyfills?.polyfills ?? {})
+        ...(options?.polyfills ?? {}),
+        ...exclude_modules
       }
     })
 
