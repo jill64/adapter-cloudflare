@@ -4,12 +4,19 @@ import type {
 } from '@sveltejs/adapter-cloudflare'
 import { Adapter, Builder } from '@sveltejs/kit'
 import { build } from 'esbuild'
+import { polyfillNode } from 'esbuild-plugin-polyfill-node'
 import { resolve } from 'import-meta-resolve'
 import { writeFileSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { compat_all_modules, compat_modules } from './compat-modules.js'
+import { PolyfillConfig } from './types/PolyfillConfig.js'
 
-export default (options: AdapterOptions = {}): Adapter => ({
+export default (
+  options: AdapterOptions & {
+    polyfills?: PolyfillConfig
+  } = {}
+): Adapter => ({
   name: '@jill64/adapter-cloudflare',
   async adapt(builder) {
     const files = fileURLToPath(
@@ -65,6 +72,64 @@ export default (options: AdapterOptions = {}): Adapter => ({
       }
     })
 
+    const node_compats = compat_all_modules.map((x) => [x, `node:${x}`])
+    const exclude_modules = Object.fromEntries(
+      compat_modules.map((x) => [x, false])
+    )
+
+    const node_polyfill = polyfillNode({
+      globals: {
+        global: false,
+        __dirname: false,
+        __filename: false,
+        navigator: false,
+        ...exclude_modules,
+        ...(options.polyfills?.globals ?? {})
+      },
+      polyfills: {
+        _stream_duplex: false,
+        _stream_passthrough: false,
+        _stream_readable: false,
+        _stream_transform: false,
+        _stream_writable: false,
+        assert: false,
+        'assert/strict': false,
+        child_process: false,
+        cluster: false,
+        console: false,
+        constants: false,
+        dgram: false,
+        dns: false,
+        domain: false,
+        fs: false,
+        'fs/promises': false,
+        http: false,
+        http2: false,
+        https: false,
+        module: false,
+        net: false,
+        os: false,
+        perf_hooks: false,
+        punycode: false,
+        querystring: false,
+        readline: false,
+        repl: false,
+        sys: false,
+        timers: false,
+        'timers/promises': false,
+        tls: false,
+        tty: false,
+        url: false,
+        v8: false,
+        vm: false,
+        wasi: false,
+        worker_threads: false,
+        zlib: false,
+        ...exclude_modules,
+        ...(options.polyfills?.polyfills ?? {})
+      }
+    })
+
     await build({
       platform: 'browser',
       conditions: ['worker', 'browser'],
@@ -78,7 +143,9 @@ export default (options: AdapterOptions = {}): Adapter => ({
       loader: {
         '.wasm': 'copy'
       },
-      external: ['cloudflare:*']
+      alias: Object.fromEntries(node_compats),
+      external: ['cloudflare:*', ...node_compats.map((m) => m[1])],
+      plugins: [node_polyfill]
     })
   }
 })
