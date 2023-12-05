@@ -12,8 +12,8 @@ importers:
         specifier: 4.20231121.0
         version: 4.20231121.0
       '@sveltejs/adapter-cloudflare':
-        specifier: 2.3.3
-        version: 2.3.3(@sveltejs/kit@1.27.7)
+        specifier: 2.3.4
+        version: 2.3.4(@sveltejs/kit@1.27.7)
       esbuild:
         specifier: 0.19.8
         version: 0.19.8
@@ -928,8 +928,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/adapter-cloudflare@2.3.3(@sveltejs/kit@1.27.7):
-    resolution: {integrity: sha512-bbcm6kq4dEluFtFJZed3KSRG4f5GUElYkVfOmnPruTqZ29nTElPJTomAu5QCp7GLkwA26O3h1Dk7+d9yLTQEXg==}
+  /@sveltejs/adapter-cloudflare@2.3.4(@sveltejs/kit@1.27.7):
+    resolution: {integrity: sha512-+5Msbm7svrZjaBt0KapNh2zEaMRfrhbTRBWRXrFa+w+KFRQnHjFIPvWz/NQ11XKVu7dRe7mkzqvqieL2b0hpJw==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
     dependencies:
