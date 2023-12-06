@@ -5,5 +5,12 @@ export default [
   ...tsConfig(),
   {
     ignores: ['demo', 'tests']
+  },
+  {
+    languageOptions: {
+      globals: {
+        process: 'readonly'
+      }
+    }
   }
 ]
