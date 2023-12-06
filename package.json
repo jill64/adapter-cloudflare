@@ -1,6 +1,6 @@
 {
   "name": "@jill64/adapter-cloudflare",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "🔌 SvelteKit Adapter for Cloudflare Pages with nodejs_compat",
   "type": "module",
   "main": "dist/index.js",
@@ -9,11 +9,7 @@
   "bugs": "https://github.com/jill64/adapter-cloudflare/issues",
   "homepage": "https://github.com/jill64/adapter-cloudflare#readme",
   "files": [
-    "dist",
-    "!**/*.test.*",
-    "!**/*.spec.*",
-    "!*.test.*",
-    "!*.spec.*"
+    "dist"
   ],
   "exports": {
     ".": {
