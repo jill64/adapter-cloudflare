@@ -6,12 +6,6 @@
 
 🔌 SvelteKit Adapter for Cloudflare Pages with node_compat
 
-## Installation
-
-```sh
-npm i @jill64/adapter-cloudflare
-```
-
 <!----- END GHOST DOCS HEADER ----->
 
 ## Usage
