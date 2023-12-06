@@ -9,11 +9,7 @@
   "bugs": "https://github.com/jill64/adapter-cloudflare/issues",
   "homepage": "https://github.com/jill64/adapter-cloudflare#readme",
   "files": [
-    "dist",
-    "!**/*.test.*",
-    "!**/*.spec.*",
-    "!*.test.*",
-    "!*.spec.*"
+    "dist"
   ],
   "exports": {
     ".": {
