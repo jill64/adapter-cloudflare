@@ -1,7 +1,7 @@
 import { Buffer } from 'node:buffer'
-import crypto from 'node:crypto'
+import path from 'node:path'
 
 export const load = () => ({
   date: Buffer.from('Buffer Test').toString(),
-  eq: crypto.timingSafeEqual(Buffer.from('123'), Buffer.from('123'))
+  path: path.join('path', 'join', 'test')
 })

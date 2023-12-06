@@ -12,8 +12,6 @@ test('smoke', async ({ page }) => {
   ).toBeVisible()
 
   await expect(
-    page.getByText(
-      "crypto.timingSafeEqual(Buffer.from('123'), Buffer.from('123')) = true"
-    )
+    page.getByText("path.join('path', 'join', 'test') = path/join/test")
   ).toBeVisible()
 })
