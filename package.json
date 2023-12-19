@@ -1,13 +1,13 @@
 {
   "name": "@jill64/adapter-cloudflare",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "🔌 SvelteKit Adapter for Cloudflare Pages with nodejs_compat",
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
   "author": {
     "name": "jill64",
-    "email": "143883742+jill64@users.noreply.github.com",
+    "email": "intents.turrets0h@icloud.com",
     "url": "https://github.com/jill64",
     "image": "https://avatars.githubusercontent.com/u/143883742?v=4"
   },
@@ -67,7 +67,7 @@
     "typescript": "5.3.3"
   },
   "dependencies": {
-    "@cloudflare/workers-types": "4.20231121.0",
+    "@cloudflare/workers-types": "4.20231218.0",
     "@sveltejs/adapter-cloudflare": "3.0.0",
     "esbuild-plugin-polyfill-node": "0.3.0",
     "esbuild": "0.19.10",
