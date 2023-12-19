@@ -65,3 +65,11 @@ export default {
    3. Add `nodejs_compat` to the Compatibility flags.
 
 3. Deploy your project.
+
+<!----- BEGIN GHOST DOCS FOOTER ----->
+
+## License
+
+MIT
+
+<!----- END GHOST DOCS FOOTER ----->
