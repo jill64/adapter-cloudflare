@@ -13,7 +13,7 @@ importers:
         version: 4.20231218.0
       '@sveltejs/adapter-cloudflare':
         specifier: 3.0.0
-        version: 3.0.0(@sveltejs/kit@2.0.3)
+        version: 3.0.0(@sveltejs/kit@2.0.4)
       esbuild:
         specifier: 0.19.10
         version: 0.19.10
@@ -40,8 +40,8 @@ importers:
         specifier: 1.40.1
         version: 1.40.1
       '@sveltejs/kit':
-        specifier: 2.0.3
-        version: 2.0.3(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
+        specifier: 2.0.4
+        version: 2.0.4(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
       '@types/node':
         specifier: 20.10.5
         version: 20.10.5
@@ -59,10 +59,10 @@ importers:
         version: 1.0.5(svelte@4.2.8)(typescript@5.3.3)
       '@jill64/sentry-sveltekit-cloudflare':
         specifier: 1.6.2
-        version: 1.6.2(@sveltejs/kit@2.0.3)(svelte@4.2.8)
+        version: 1.6.2(@sveltejs/kit@2.0.4)(svelte@4.2.8)
       '@sveltejs/kit':
-        specifier: 2.0.3
-        version: 2.0.3(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
+        specifier: 2.0.4
+        version: 2.0.4(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
       '@sveltejs/vite-plugin-svelte':
         specifier: 3.0.1
         version: 3.0.1(svelte@4.2.8)(vite@5.0.10)
@@ -610,13 +610,13 @@ packages:
     resolution: {integrity: sha512-KuryQDStqkQ/zKR9Q7JXiW927m7SvwirQo6Oohss1Q9cRyYS2JOyhtcBavZnoEhH4pHJkaigfjUXA3em4n6egA==}
     dev: true
 
-  /@jill64/sentry-sveltekit-cloudflare@1.6.2(@sveltejs/kit@2.0.3)(svelte@4.2.8):
+  /@jill64/sentry-sveltekit-cloudflare@1.6.2(@sveltejs/kit@2.0.4)(svelte@4.2.8):
     resolution: {integrity: sha512-9Rhhehdw5PX33zSDKSsR/+/3MHHiFP7Rv1ni+lmMo7TidnIY6gcNZxxFp5a/Qf5+85E+PVBfxpL0XuGoiEZHHw==}
     peerDependencies:
       '@sveltejs/kit': '>=1.0.0'
     dependencies:
-      '@sentry/sveltekit': 7.88.0(@sveltejs/kit@2.0.3)(svelte@4.2.8)
-      '@sveltejs/kit': 2.0.3(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
+      '@sentry/sveltekit': 7.88.0(@sveltejs/kit@2.0.4)(svelte@4.2.8)
+      '@sveltejs/kit': 2.0.4(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
       toucan-js: 3.3.1
     transitivePeerDependencies:
       - encoding
@@ -980,7 +980,7 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /@sentry/sveltekit@7.88.0(@sveltejs/kit@2.0.3)(svelte@4.2.8):
+  /@sentry/sveltekit@7.88.0(@sveltejs/kit@2.0.4)(svelte@4.2.8):
     resolution: {integrity: sha512-ZkpTPOBb9RHWAenqasGVSQl3XxuYEecrEJVUignF+Dz7hpO/vpprihnFIp4QVnb5Tzjw6ba05/HCgzIQqJMfnA==}
     engines: {node: '>=16'}
     peerDependencies:
@@ -994,7 +994,7 @@ packages:
       '@sentry/types': 7.88.0
       '@sentry/utils': 7.88.0
       '@sentry/vite-plugin': 0.6.1
-      '@sveltejs/kit': 2.0.3(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
+      '@sveltejs/kit': 2.0.4(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
       magicast: 0.2.8
       sorcery: 0.11.0
     transitivePeerDependencies:
@@ -1044,19 +1044,19 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/adapter-cloudflare@3.0.0(@sveltejs/kit@2.0.3):
+  /@sveltejs/adapter-cloudflare@3.0.0(@sveltejs/kit@2.0.4):
     resolution: {integrity: sha512-McUuRy7cOZ/DNykW9DbcZjj+IKx2JmFPRqbZMpk5kwfpq5ay70JprRkpEcnSdYMEoNmp8C2xUHf43ha394dZuQ==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
     dependencies:
       '@cloudflare/workers-types': 4.20231218.0
-      '@sveltejs/kit': 2.0.3(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
+      '@sveltejs/kit': 2.0.4(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
       esbuild: 0.19.10
       worktop: 0.8.0-next.15
     dev: false
 
-  /@sveltejs/kit@2.0.3(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10):
-    resolution: {integrity: sha512-TjqRBC7I3qnGeRfmxAkkwbQVnto9x+DsSDTtHC4qC+MgHPImIVzSgUiw//tZ3/uB5/MXhGNLhi5mztWZVM0sjw==}
+  /@sveltejs/kit@2.0.4(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10):
+    resolution: {integrity: sha512-pqUOo1Slp2fybNjTouF7qgeN815hO2boRCNO1Z7/XtXu5IPNg9OSwI485qmQ0GUU2v2NmA0XZciFHGrgzOixyw==}
     engines: {node: '>=18.13'}
     hasBin: true
     requiresBuild: true
