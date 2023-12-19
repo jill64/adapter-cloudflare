@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@cloudflare/workers-types':
-        specifier: 4.20231121.0
-        version: 4.20231121.0
+        specifier: 4.20231218.0
+        version: 4.20231218.0
       '@sveltejs/adapter-cloudflare':
         specifier: 3.0.0
         version: 3.0.0(@sveltejs/kit@2.0.3)
@@ -114,8 +114,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@cloudflare/workers-types@4.20231121.0:
-    resolution: {integrity: sha512-+kWfpCkqiepwAKXyHoE0gnkPgkLhz0/9HOBIGhHRsUvUKvhUtm3mbqqoGRWgF1qcjzrDUBbrrOq4MYHfFtc2RA==}
+  /@cloudflare/workers-types@4.20231218.0:
+    resolution: {integrity: sha512-Vs1FKjfUjXYGbCsXzkl+ITp0Iyb6QiW6+vTERTNThC+v96T0IvPVAioH4tT20rXwoxAfxh380mAaxYtTrJUNVg==}
     dev: false
 
   /@esbuild/aix-ppc64@0.19.10:
@@ -1049,7 +1049,7 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
     dependencies:
-      '@cloudflare/workers-types': 4.20231121.0
+      '@cloudflare/workers-types': 4.20231218.0
       '@sveltejs/kit': 2.0.3(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
       esbuild: 0.19.10
       worktop: 0.8.0-next.15

@@ -67,7 +67,7 @@
     "typescript": "5.3.3"
   },
   "dependencies": {
-    "@cloudflare/workers-types": "4.20231121.0",
+    "@cloudflare/workers-types": "4.20231218.0",
     "@sveltejs/adapter-cloudflare": "3.0.0",
     "esbuild-plugin-polyfill-node": "0.3.0",
     "esbuild": "0.19.10",
