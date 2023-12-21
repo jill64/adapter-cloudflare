@@ -1,8 +1,12 @@
 <!----- BEGIN GHOST DOCS HEADER ----->
 
-# adapter-cloudflare
+# @jill64/adapter-cloudflare
 
-<!----- BEGIN GHOST DOCS BADGES -----><a href="https://npmjs.com/package/@jill64/adapter-cloudflare"><img src="https://img.shields.io/npm/v/@jill64/adapter-cloudflare" alt="npm-version" /></a> <a href="https://npmjs.com/package/@jill64/adapter-cloudflare"><img src="https://img.shields.io/npm/l/@jill64/adapter-cloudflare" alt="npm-license" /></a> <a href="https://npmjs.com/package/@jill64/adapter-cloudflare"><img src="https://img.shields.io/npm/dm/@jill64/adapter-cloudflare" alt="npm-download-month" /></a> <a href="https://npmjs.com/package/@jill64/adapter-cloudflare"><img src="https://img.shields.io/bundlephobia/min/@jill64/adapter-cloudflare" alt="npm-min-size" /></a> <a href="https://github.com/jill64/adapter-cloudflare/actions/workflows/ci.yml"><img src="https://github.com/jill64/adapter-cloudflare/actions/workflows/ci.yml/badge.svg" alt="ci.yml" /></a><!----- END GHOST DOCS BADGES ----->
+
+<!----- BEGIN GHOST DOCS BADGES ----->
+<a href="https://npmjs.com/package/@jill64/adapter-cloudflare"><img src="https://img.shields.io/npm/v/@jill64/adapter-cloudflare" alt="npm-version" /></a> <a href="https://npmjs.com/package/@jill64/adapter-cloudflare"><img src="https://img.shields.io/npm/l/@jill64/adapter-cloudflare" alt="npm-license" /></a> <a href="https://npmjs.com/package/@jill64/adapter-cloudflare"><img src="https://img.shields.io/npm/dm/@jill64/adapter-cloudflare" alt="npm-download-month" /></a> <a href="https://npmjs.com/package/@jill64/adapter-cloudflare"><img src="https://img.shields.io/bundlephobia/min/@jill64/adapter-cloudflare" alt="npm-min-size" /></a> <a href="https://github.com/jill64/adapter-cloudflare/actions/workflows/ci.yml"><img src="https://github.com/jill64/adapter-cloudflare/actions/workflows/ci.yml/badge.svg" alt="ci.yml" /></a>
+<!----- END GHOST DOCS BADGES ----->
+
 
 🔌 SvelteKit Adapter for Cloudflare Pages with nodejs_compat
 
