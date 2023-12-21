@@ -72,6 +72,6 @@
     "esbuild-plugin-polyfill-node": "0.3.0",
     "esbuild": "0.19.10",
     "import-meta-resolve": "4.0.0",
-    "worktop": "0.8.0-next.15"
+    "worktop": "0.8.0-next.16"
   }
 }
