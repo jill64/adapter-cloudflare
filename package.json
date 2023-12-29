@@ -70,7 +70,7 @@
     "@cloudflare/workers-types": "4.20231218.0",
     "@sveltejs/adapter-cloudflare": "3.0.1",
     "esbuild-plugin-polyfill-node": "0.3.0",
-    "esbuild": "0.19.10",
+    "esbuild": "0.19.11",
     "import-meta-resolve": "4.0.0",
     "worktop": "0.8.0-next.16"
   }
