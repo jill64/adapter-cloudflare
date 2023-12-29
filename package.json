@@ -1,6 +1,6 @@
 {
   "name": "@jill64/adapter-cloudflare",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "🔌 SvelteKit Adapter for Cloudflare Pages with nodejs_compat",
   "type": "module",
   "main": "dist/index.js",
