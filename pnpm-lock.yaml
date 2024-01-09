@@ -13,7 +13,7 @@ importers:
         version: 4.20231218.0
       '@sveltejs/adapter-cloudflare':
         specifier: 3.0.1
-        version: 3.0.1(@sveltejs/kit@2.0.8)
+        version: 3.0.1(@sveltejs/kit@2.1.0)
       esbuild:
         specifier: 0.19.11
         version: 0.19.11
@@ -40,8 +40,8 @@ importers:
         specifier: 1.40.1
         version: 1.40.1
       '@sveltejs/kit':
-        specifier: 2.0.8
-        version: 2.0.8(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.11)
+        specifier: 2.1.0
+        version: 2.1.0(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.11)
       '@types/node':
         specifier: 20.10.7
         version: 20.10.7
@@ -59,10 +59,10 @@ importers:
         version: 1.0.12(svelte@4.2.8)(typescript@5.3.3)
       '@jill64/sentry-sveltekit-cloudflare':
         specifier: 1.7.1
-        version: 1.7.1(@sveltejs/kit@2.0.8)(svelte@4.2.8)
+        version: 1.7.1(@sveltejs/kit@2.1.0)(svelte@4.2.8)
       '@sveltejs/kit':
-        specifier: 2.0.8
-        version: 2.0.8(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.11)
+        specifier: 2.1.0
+        version: 2.1.0(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.11)
       '@sveltejs/vite-plugin-svelte':
         specifier: 3.0.1
         version: 3.0.1(svelte@4.2.8)(vite@5.0.11)
@@ -384,13 +384,13 @@ packages:
     resolution: {integrity: sha512-KuryQDStqkQ/zKR9Q7JXiW927m7SvwirQo6Oohss1Q9cRyYS2JOyhtcBavZnoEhH4pHJkaigfjUXA3em4n6egA==}
     dev: true
 
-  /@jill64/sentry-sveltekit-cloudflare@1.7.1(@sveltejs/kit@2.0.8)(svelte@4.2.8):
+  /@jill64/sentry-sveltekit-cloudflare@1.7.1(@sveltejs/kit@2.1.0)(svelte@4.2.8):
     resolution: {integrity: sha512-dfuxKc8Kf5wHzf5t6vfTdIZdnxU+1vxtQ55A4S7YELys8wZgV9nWBVq3K6Mmh5TLEDG1X2w1Xxzu6VcZiL3rRw==}
     peerDependencies:
       '@sveltejs/kit': 1.x || 2.x
     dependencies:
       '@sentry/svelte': 7.91.0(svelte@4.2.8)
-      '@sveltejs/kit': 2.0.8(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.11)
+      '@sveltejs/kit': 2.1.0(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.11)
       toucan-js: 3.3.1
     transitivePeerDependencies:
       - svelte
@@ -651,19 +651,19 @@ packages:
       '@sentry/types': 7.91.0
     dev: true
 
-  /@sveltejs/adapter-cloudflare@3.0.1(@sveltejs/kit@2.0.8):
+  /@sveltejs/adapter-cloudflare@3.0.1(@sveltejs/kit@2.1.0):
     resolution: {integrity: sha512-yhncGexWlDE3DAd6N/wsuel7BFwgBGWkvTG8iMAEaE/dHSEEUEUXOFK4IMKtPZWFuIkXmyfLxOSD8A8Kzv7ppg==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
     dependencies:
       '@cloudflare/workers-types': 4.20231218.0
-      '@sveltejs/kit': 2.0.8(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.11)
+      '@sveltejs/kit': 2.1.0(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.11)
       esbuild: 0.19.11
       worktop: 0.8.0-next.15
     dev: false
 
-  /@sveltejs/kit@2.0.8(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.11):
-    resolution: {integrity: sha512-44F3uE5NLwYoqDnfmX5s3cZf2SssyHpUh9vokJ3YKzf7N7nDiPZPE3sdSelLc6RT7DUr7X4HKAu72wKpw2eonw==}
+  /@sveltejs/kit@2.1.0(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.11):
+    resolution: {integrity: sha512-XSIjk9uY705VRpLapfScvOI3bKTfPXntLCdWVsQHhLvkTD7TPNHWh45/6nTT1vQ8rJwWzzA5sLide2YLT4FMsg==}
     engines: {node: '>=18.13'}
     hasBin: true
     requiresBuild: true
